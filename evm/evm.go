@@ -64,7 +64,6 @@ func (e *EVM) performBinaryStackOperation(numOperands int, operation func(...*ui
 		operands[i], err = e.stack.Pop()
 		if err != nil {
 			// Unreachable in theory.
-			// This step should never fail because of an overflow.
 			// Indeed, we perform a check to make sure the number of operands is always smaller or equal to the number of elements in the stack.
 			return err
 		}
