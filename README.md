@@ -1,6 +1,6 @@
 # EVM-FROM-SCRATCH
 
-EVM-FROM-SCRATCH is a clean-room implementation of the Ethereum Virtual Machine (EVM) in Go. It follows the Ethereum Yellow Paper, with clear, idiomatic Go code for accessibility and extensibility.
+EVM-FROM-SCRATCH is an implementation of the Ethereum Virtual Machine (EVM) in Go. It follows the Ethereum Yellow Paper, with clear, idiomatic Go code for accessibility and extensibility.
 
 ## Features
 
