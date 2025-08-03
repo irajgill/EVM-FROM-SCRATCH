@@ -1,6 +1,6 @@
 # EVM-FROM-SCRATCH
 
-EVM-FROM-SCRATCH is a clean-room implementation of the Ethereum Virtual Machine (EVM) in Go, designed for learning, experiments, and prototyping. It follows the Ethereum Yellow Paper, with clear, idiomatic Go code for accessibility and extensibility.
+EVM-FROM-SCRATCH is a clean-room implementation of the Ethereum Virtual Machine (EVM) in Go. It follows the Ethereum Yellow Paper, with clear, idiomatic Go code for accessibility and extensibility.
 
 ## Features
 
@@ -18,5 +18,43 @@ EVM-FROM-SCRATCH is a clean-room implementation of the Ethereum Virtual Machine 
 ### Installation
 
 Clone this repository and install dependencies:
+
+`git clone https://github.com/irajgill/EVM-FROM-SCRATCH.git`
+
+`cd EVM-FROM-SCRATCH`
+
+`go mod tidy`
+
+
+## Usage
+
+The main EVM implementation is in the `go-evm/evm` directory. You can import this as a package or run the included test suite to explore its behavior. Modify or extend the code for your use case or to better understand EVM semantics.
+
+## Developer Workflow
+
+All common tasks are automated via Makefile targets.
+
+### Common Commands
+
+- **Help:** `make help`
+- **Lint and Format:** `make lint`
+   
+Runs `go mod tidy`, `go vet`, `golangci-lint`, and variable shadow checks.
+
+
+Automatically formats the code using `make fmt`.
+
+- **Testing:** `make test`
+
+- Runs all EVM package tests with coverage reporting: `make coverage`
+
+
+Opens an interactive HTML coverage report in your browser.
+
+
+
+
+
+
 
 
